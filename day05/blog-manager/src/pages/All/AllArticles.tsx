@@ -1,4 +1,4 @@
-import ArticleCard from "../components/article-card/Article-card";
+import ArticleCard from "../../components/article-card/Article-card";
 
 const AllArticles = () => {
     return (

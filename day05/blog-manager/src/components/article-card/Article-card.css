@@ -1,5 +1,61 @@
 .article-card {
-    background-color: beige;
-    height: 25rem;
-    width: 10rem;
+  background-color: #d3dfde;
+  width: 30rem;
+  height: 15rem;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+h3,
+.content {
+  color: #2c3e50;
+}
+
+h3 {
+  margin: 0;
+}
+
+.content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.muted {
+  color: rgb(122, 120, 120);
+  margin: 0;
+  font-size: bold;
+  /* margin-bottom: 1rem; */
+}
+
+.article-card:hover {
+  transform: translateY(3);
+}
+
+.redirectBtn {
+  background-color: #598392;
+  color: #f1faee;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  width: 20rem;
+}
+
+.redirectBtn:hover {
+  background-color: #517380;
+  border-color: #517380;
+}
+
+.btn-group {
+  display: flex;
+  gap: 0.5rem; /* espace entre les boutons */
+  margin-top: auto; /* pousse les boutons en bas de la card */
 }
