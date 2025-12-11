@@ -1,6 +1,11 @@
+import ArticleCard from "../components/article-card/Article-card";
+
 const AllArticles = () => {
     return (
-      <p>All Articles works !</p>
+      <div className="all">
+        <h2>Mes articles</h2>
+        <ArticleCard />
+      </div>
     );
   };
 
