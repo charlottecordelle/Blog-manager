@@ -1,7 +1,11 @@
+import Form from "../components/form/form";
+
 const New = () => {
-    return (
-      <p>New works !</p>
-    );
-  };
+  return (
+    <div className="form">
+      <Form />
+    </div>
+  );
+};
 
 export default New;
