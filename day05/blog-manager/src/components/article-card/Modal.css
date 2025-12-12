@@ -1,41 +1,78 @@
-/* FOND FLOU */
+/* Modale de modification */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-  
-  /* BOÎTE CENTRALE */
-  .modal-content {
-    background: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 30rem;
-    max-width: 90%;
-    color: #2c3e50;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* BOUTON FERMER */
-  .close-btn {
-    margin-top: 1rem;
-    background-color: #598392;
-    color: #fff;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    cursor: pointer;
-    border: none;
-    font-weight: bold;
-  }
-  
-  .close-btn:hover {
-    background-color: #517380;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #f1faee;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 30rem;
+  max-width: 90%;
+  color: #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* BOUTON FERMER */
+.close-btn {
+  margin-top: 1rem;
+  background-color: #598392;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  border-color: #2c3e50;
+}
+
+.close-btn:hover {
+  background-color: #517380;
+}
+
+/* Modale de suppression */
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: flex-end;
+}
+
+.btn-cancel {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-cancel:hover {
+  background-color: #ccc;
+}
+
+.btn-delete {
+  background-color: #d44535;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}

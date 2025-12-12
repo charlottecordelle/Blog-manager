@@ -1,10 +1,10 @@
-import ArticleCard from "../../components/article-card/Article-card";
+import ArticleList from "../../components/Article-list/Article-List";
 
 const AllArticles = () => {
     return (
       <div className="all">
         <h2>Mes articles</h2>
-        <ArticleCard />
+        <ArticleList />
       </div>
     );
   };
