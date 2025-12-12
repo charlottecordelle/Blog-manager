@@ -85,3 +85,32 @@ h2 {
   opacity: 0.6;
   box-shadow: none;
 }
+
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid #b8c9c8;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background-color: white;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  color: #2c3e50;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23598392' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #598392;
+  box-shadow: 0 0 0 3px rgba(89, 131, 146, 0.1);
+}
+
+.form-group select:hover {
+  border-color: #598392;
+}

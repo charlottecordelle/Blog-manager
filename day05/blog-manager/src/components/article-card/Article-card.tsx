@@ -1,7 +1,7 @@
 import "./Article-card.css";
-import { Pencil } from "lucide-react";
+import { Pencil, Trash } from "lucide-react";
 import { useState } from "react";
-import "./Modal.css"
+import "./Modal.css";
 import Form from "../form/Form";
 
 function ArticleCard() {
@@ -17,14 +17,22 @@ function ArticleCard() {
         at turpis tristique tincidunt. Sed viverra eget neque non vehicula.
         Morbi feugiat mi nec mattis congue. Aenean euismod ultricies sodales.
       </p>
-      <p className="muted">Charlotte Cordelle</p>
+      <div className="muted">
+        <p>Charlotte Cordelle</p>
+        <p>Category</p>
+      </div>
       <div className="btn-group">
         <button type="button" className="redirectBtn">
           Voir plus...
         </button>
-        <button className="redirectBtn" onClick={() => setIsOpen(true)}>
-          <Pencil size={20} />
-        </button>
+        <div className="btn-group">
+          <button className="modifyBtn" onClick={() => setIsOpen(true)}>
+            <Pencil size={20} />
+          </button>
+          <button className="deleteBtn" onClick={() => setIsOpen(true)}>
+            <Trash size={20} />
+          </button>
+        </div>
 
         {isOpen && (
           <div className="modal-overlay" onClick={() => setIsOpen(false)}>

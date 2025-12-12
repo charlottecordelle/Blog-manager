@@ -1,19 +1,23 @@
 import "./Form.css";
 import { useState } from "react";
-import { type Article } from "../../models/article.interface";
+import { Category, type Article } from "../../models/article.interface";
 
 function Form() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [author, setAuthor] = useState("");
+  const [category, setCategory] = useState<Category | "">("");
 
   const isFormValid =
-    title.trim() !== "" && content.trim() !== "" && author.trim() !== "";
+    title.trim() !== "" &&
+    content.trim() !== "" &&
+    author.trim() !== "" &&
+    category.trim() !== "";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!isFormValid) return;
+    if (!isFormValid || category === "") return;
 
     const existingArticles = localStorage.getItem("articles");
     const articles: Article[] = existingArticles
@@ -30,6 +34,7 @@ function Form() {
       title: title.trim(),
       content: content.trim(),
       author: author.trim(),
+      category: category,
       createdAt: new Date(),
     };
 
@@ -39,6 +44,7 @@ function Form() {
     setTitle("");
     setContent("");
     setAuthor("");
+    setCategory("");
 
     console.log(newArticle);
   };
@@ -75,6 +81,25 @@ function Form() {
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
           />
+        </div>
+        <div className="form-group">
+          <label>Catégorie</label>
+          <select
+            name="category"
+            value={category}
+            onChange={(e) => setCategory(e.target.value as Category | "")}
+          >
+            <option value="">-- Sélectionnez --</option>
+            <option value={Category.APPRENTISSAGE}>
+              {Category.APPRENTISSAGE}
+            </option>
+            <option value={Category.PROJETS}>{Category.PROJETS}</option>
+            <option value={Category.CARRIERE}>{Category.CARRIERE}</option>
+            <option value={Category.VIE_ETUDIANTE}>
+              {Category.VIE_ETUDIANTE}
+            </option>
+            <option value={Category.TRENDS}>{Category.TRENDS}</option>
+          </select>
         </div>
         <button type="submit" className="btn" disabled={!isFormValid}>
           Valider
