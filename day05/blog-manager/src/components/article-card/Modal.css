@@ -13,7 +13,7 @@
 }
 
 .modal-content {
-  background: #f1faee;
+  background: #c8d1c9;
   padding: 2rem;
   border-radius: 10px;
   width: 30rem;
@@ -22,7 +22,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* BOUTON FERMER */
 .close-btn {
   margin-top: 1rem;
   background-color: #598392;
