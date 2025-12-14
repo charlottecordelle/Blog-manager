@@ -55,9 +55,7 @@ const Article = () => {
           <div className="article-meta">
             <span className="author">Par {article.author}</span>
             <span className="category">{article.category}</span>
-            <span className="date">
-              {formatDate(article.createdAt)}
-            </span>
+            <span className="date">{formatDate(article.createdAt)}</span>
           </div>
         </header>
 

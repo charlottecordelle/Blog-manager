@@ -46,7 +46,7 @@
   justify-content: flex-end;
 }
 
-.btn-cancel {
+.btnCancel {
   background-color: #ddd;
   color: #333;
   border: none;
@@ -57,11 +57,11 @@
   transition: background-color 0.2s;
 }
 
-.btn-cancel:hover {
+.btnCancel:hover {
   background-color: #ccc;
 }
 
-.btn-delete {
+.btnDelete {
   background-color: #d44535;
   color: white;
   border: none;
@@ -72,6 +72,6 @@
   transition: background-color 0.2s;
 }
 
-.btn-delete:hover {
+.btnDelete:hover {
   background-color: #c0392b;
 }

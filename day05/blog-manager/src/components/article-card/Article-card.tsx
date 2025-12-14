@@ -84,10 +84,7 @@ function ArticleCard({ article }: { article: Article }) {
 
         {isOpen && (
           <div className="modal-overlay" onClick={() => setIsOpen(false)}>
-            <div
-              className="modal-content"
-              onClick={(e) => e.stopPropagation()}
-            >
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
               <h2>Modifier mon article</h2>
               <form onSubmit={handleEditSubmit}>
                 <div className="form-group">
@@ -135,7 +132,7 @@ function ArticleCard({ article }: { article: Article }) {
                 <div className="modal-actions">
                   <button
                     type="button"
-                    className="btn-cancel"
+                    className="btnCancel"
                     onClick={() => setIsOpen(false)}
                   >
                     Annuler
@@ -159,12 +156,12 @@ function ArticleCard({ article }: { article: Article }) {
               <p>Êtes-vous sûr de vouloir supprimer cet article ?</p>
               <div className="modal-actions">
                 <button
-                  className="btn-cancel"
+                  className="btnCancel"
                   onClick={() => setIsDeleteModalOpen(false)}
                 >
                   Annuler
                 </button>
-                <button className="btn-delete" onClick={handleDelete}>
+                <button className="btnDelete" onClick={handleDelete}>
                   Supprimer
                 </button>
               </div>

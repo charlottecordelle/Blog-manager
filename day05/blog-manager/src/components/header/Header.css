@@ -1,6 +1,6 @@
 .header {
-  background-color: #1D3557;
-  color: #F1FAEE;
+  background-color: #1d3557;
+  color: #f1faee;
   padding: 1rem 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -43,7 +43,7 @@
 .icon-button {
   background: none;
   border: none;
-  color: #F1FAEE;
+  color: #f1faee;
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 0;
@@ -61,20 +61,10 @@
 }
 
 .active-button {
-  background-color: #AEC3B0 !important;
-  color: #1D3557 !important;
+  background-color: #aec3b0 !important;
+  color: #1d3557 !important;
 }
 
 .active-button:hover {
   background-color: #8fb3c4 !important;
-}
-
-@media (max-width: 768px) {
-  .header-title {
-    font-size: 1.25rem;
-  }
-  
-  .header-icons {
-    gap: 0.5rem;
-  }
 }
