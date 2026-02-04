@@ -19,7 +19,7 @@ Ce projet met l’accent sur la création d’une application **typée, modulair
 ## Installation
 
 ```bash
-git clone <URL_DU_REPO>
+git clone https://github.com/charlottecordelle/Blog-manager.git
 cd day05/blog-manager
 npm install
 npm start
